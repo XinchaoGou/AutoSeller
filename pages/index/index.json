@@ -1,5 +1,6 @@
 {
     "navigationBarBackgroundColor": "#eec82e",
     "backgroundColor": "#000000",
-    "navigationBarTitleText": "店铺名称"
+    "navigationBarTitleText": "店铺名称",
+    "enablePullDownRefresh":true
 }
