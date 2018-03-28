@@ -1,0 +1,17 @@
+<import src="stars-template/stars-template.wxml" />
+<template name="menuListTemplate">
+  <view class="wx-navigator_n3vQYd">
+    <image class="wx-image_HsAX8s" style="border-radius:16rpx;" src="{{menuImg}}" />
+    <view class="c-minheight wx-view_ZhdL6d" data-c_e_id="wx_view8962c896">
+      <template is="starsTemplate" />
+      <text class="c-block wx-text_cjhm6S" data-c_e_id="wx_text699a7b33">{{sketch}}</text>
+      <text class="wx-text_JkhshF2" data-c_e_id="wx_textfdd192ca">{{title}}</text>
+      <view class="c-block wx-text_WEMSkk" data-c_e_id="wx_textd752e84a">
+      <image style="width:64rpx;height:64rpx;margin-left:238rpx;margin-top:-250rpx;" src="../../images/icon/getCar.png"></image>
+        <view class="price_text">
+          <text>￥{{price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

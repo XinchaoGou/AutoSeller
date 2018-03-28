@@ -1,0 +1,161 @@
+page {
+  background-color: #f4f4f4;
+}
+
+.container {
+  overflow-y: yes;
+  padding: 0;
+}
+
+.head-background {
+  margin-top: -40rpx;
+  width: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  z-index: -9999;
+}
+
+.returnBar {
+  position: absolute;
+  width: 100%;
+}
+
+.leftArrow {
+  width: 22rpx;
+  height: 38rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  float: left;
+}
+
+.bell {
+  width: 38rpx;
+  height: 46rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  float: right;
+}
+
+.userinfo-bgImg {
+  width: 100%;
+  height: 400rpx;
+}
+
+.userinfo {
+  /*display: flex;*/
+  width: 100%;
+  height: 120rpx;
+  flex-direction: column;
+  background: #f4f4f4;
+  margin-top: -7rpx;
+  padding-bottom: 15rpx;
+}
+
+.userinfo-avatar {
+  float: left;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  margin-top: -80rpx;
+  margin-bottom: 0;
+}
+
+.userinfo-nickname {
+  font-size: 32rpx;
+  color: #555;
+  padding: 24rpx 20rpx 0 0;
+  float: left;
+}
+
+.userProfile {
+  width: 60%;
+  float: left;
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 12rpx;
+}
+
+.usermotto {
+  width: 100%;
+  height: 144rpx;
+  background-color: white;
+}
+
+.edit {
+  width: 40rpx;
+  height: 40rpx;
+  padding: 24rpx 20rpx 0 20rpx;
+  float: left;
+}
+
+.myNumber {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  display: block;
+  float: left;
+}
+
+.user-number {
+  float: left;
+  margin-left: 24rpx;
+  font-size: 26rpx;
+  line-height: 148rpx;
+  font-family: PingFangSC-Regular;
+  color: #555;
+}
+
+.number {
+  float: left;
+  margin-left: 12rpx;
+  line-height: 148rpx;
+  color: red;
+}
+
+.userItem {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.interval {
+  margin-bottom: 20rpx;
+}
+
+.userItemImg {
+  width: 56rpx;
+  height: 56rpx;
+  margin-left: 20rpx;
+  margin-top: 24rpx;
+  display: block;
+  float: left;
+}
+
+.userItemText {
+  float: left;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular;
+  color: #555;
+}
+
+.userItemArrow {
+  width: 16rpx;
+  height: 26rpx;
+  float: right;
+  margin-top: 36rpx;
+  margin-right: 24rpx;
+}
+
+.foot {
+  width: 100%;
+  height: 160rpx;
+  position: relative;
+}

@@ -1,0 +1,66 @@
+  <template name="pinglunTemplate">
+  <view class="commentlistwrap" data-c_e_id="wx_view_c359400f">
+    <view class="wx-view_8NFuqw" data-c_e_id="wx_view_664566c4">
+      <text class="c-block wx-text_t7lDiK" data-c_e_id="wx_text68f182cf">2人点评</text>
+    </view>
+    <view class="commentlistitem" data-c_e_id="wx_view_16d0f86f">
+      <navigator class="nav_userlink" data-c_e_id="wx_navigator2ffed891" hover-class="navigator-hover">
+        <view class="likeuser fm2" data-c_e_id="wx_viewd34d457a">
+          <image class="useravatar" data-c_e_id="wx_image7b2bd094" mode="aspectFill" src="http://imgcdn.guoku.com/avatar/50/681eb4e30ac36d9481ea421c3fc61c6b.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(http://imgcdn.guoku.com/avatar/50/681eb4e30ac36d9481ea421c3fc61c6b.jpg); "
+          />
+        </view>
+      </navigator>
+      <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_view_66505bdf">
+        <view class="wx-view_F9ISUC" data-c_e_id="wx_view27217bec">
+          <navigator class="wx-navigator_wTcTS2" data-c_e_id="wx_navigator70eae9f8" hover-class="navigator-hover">
+            <text class="wx-text_71u3gA" data-c_e_id="wx_text5fe6919d">木芽</text>
+          </navigator>
+          <view class="wx-view_wrkAD7" data-c_e_id="wx_view_53be94ea">
+            <image class="wx-image_YoXk15" data-c_e_id="wx_image_d1caf161" src="http://qty83k.creatby.com/materials/origin/53a095f5786a4f0e1e50eea5ec5c84bc_origin.png" />
+          </view>
+        </view>
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb">走几步中行旁边，还有个洞庭湖土菜馆隔壁
+里面位置好多，装修不像潮式风格，还有......</text>
+        <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+            <view class="commentlikebtn" data-c_e_id="wx_viewb3b5b6f1">
+              <image class="wx-image_YoXk15" data-c_e_id="wx_image0736d1e2" src="http://qty83k.creatby.com/materials/origin/2459ad45d8071985f1cf7f91f3b3df66_origin.png" />
+            </view>
+            <view class="commentreplybtn" data-c_e_id="wx_view9909114c">
+              <image class="wx-image_YoXk15" data-c_e_id="wx_imagef86ae815" src="http://qty83k.creatby.com/materials/origin/0564a45ab780222757935674e13d6919_origin.png" />
+            </view>
+          </view>
+          <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3">2016.10.29</text>
+        </view>
+      </view>
+    </view>
+    <view class="commentlistitem" data-c_e_id="wx_view4daafd3b">
+      <navigator class="nav_userlink" data-c_e_id="wx_navigator4581cf51" hover-class="navigator-hover">
+        <view class="likeuser fm3" data-c_e_id="wx_view94910b5d">
+          <image class="useravatar" data-c_e_id="wx_imaged4532b14" mode="aspectFill" src="http://imgcdn.guoku.com/avatar/128/589c0d8d2966eb20241a61564676b7f7.jpg" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(http://imgcdn.guoku.com/avatar/128/589c0d8d2966eb20241a61564676b7f7.jpg); "
+          />
+        </view>
+      </navigator>
+      <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_viewc808f6b9">
+        <view class="wx-view_F9ISUC" data-c_e_id="wx_view54c5a204">
+          <navigator class="wx-navigator_wTcTS2" data-c_e_id="wx_navigator9e12243f" hover-class="navigator-hover">
+            <text class="wx-text_71u3gA" data-c_e_id="wx_textf720176a">UPUP</text>
+          </navigator>
+          <view class="wx-view_wrkAD7" data-c_e_id="wx_viewd862c378" />
+        </view>
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_texte7f2518b">非常不错，口感超棒以后常来……</text>
+        <view class="comment_operate" data-c_e_id="wx_view1ec2d46b">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view126a4c3a">
+            <view class="commentlikebtn" data-c_e_id="wx_viewe2d39273">
+              <image class="wx-image_YoXk15" data-c_e_id="wx_image696d6d8f" src="http://qty83k.creatby.com/materials/origin/2459ad45d8071985f1cf7f91f3b3df66_origin.png" />
+            </view>
+            <view class="commentreplybtn" data-c_e_id="wx_view5c7d06ea">
+              <image class="wx-image_YoXk15" data-c_e_id="wx_image23cd763a" src="http://qty83k.creatby.com/materials/origin/0564a45ab780222757935674e13d6919_origin.png" />
+            </view>
+          </view>
+          <text class="listitem_creattime" data-c_e_id="wx_text7a845479">2016.10.29</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

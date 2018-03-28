@@ -1,0 +1,105 @@
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.drawer_attr_box {
+  height: 73%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+
+.close_icon {
+  width: 25rpx;
+  height: 25rpx;
+  line-height: 20rpx;
+  font-size: 30rpx;
+  position: absolute;
+  right: 5rpx;
+  top:5rpx;
+  padding: 10rpx;
+  color: #ccc;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+}
+
+.drawer_attr_content {
+  padding: 20rpx;
+  height: 600rpx;
+  overflow-y: scroll;
+}
+
+.drawer_image {
+  margin-left: 19rpx;
+  margin-top: 19rpx;
+  border-radius:16rpx;
+  width: 250rpx;
+  height: 250rpx;
+}
+
+/* 定义出现滚动条的px */
+.drawer_desc{
+    height:500prx;
+    font-size:26rpx;
+    margin:20rpx;
+}
+
+.btn {
+  width: 80%;
+  padding: 15rpx 0;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.open_btn {
+  margin: 40rpx 10%;
+  border-radius: 10rpx;
+  background: #20bb21;
+  color: #fff;
+}
+
+
+.closeImg{
+  margin-right: 8rpx;
+  margin-top: 8rpx;
+  float: right;
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.text{
+    margin-top: 16rpx;
+    border-radius:16rpx;
+    height: 80rpx;
+    width: 50%;
+    text-align: center;
+    float: left;
+    background: #000;
+    color: #fff;
+}
+.text_buy{
+    font-size:Microsoft Blod; 
+    margin-top: 18.5rpx;
+}
+
+.fengexian{
+    margin-top: 19rpx;
+    height: 1px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}

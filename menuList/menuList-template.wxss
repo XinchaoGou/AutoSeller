@@ -1,0 +1,12 @@
+.styleImg{
+    background-image: url(http://imgcdn.guoku.com/images/310/15d1670caa233632626f4e4d5c6c33b2.jpg); 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+}
+
+.price_text{
+    margin-top: 50rpx;
+    margin-left: 50rpx;
+    color: "#ff5408";
+}

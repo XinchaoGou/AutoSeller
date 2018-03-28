@@ -1,0 +1,26 @@
+<import src="../../indexAssembly/poster-template/poster-template.wxml" />
+<import src="../../menuList/menuList-template.wxml" />
+<import src="../../menuList/stars-template/stars-template.wxml" />
+
+
+
+<!-- 海报 -->
+<template is="posterTemplate" />
+
+<!-- 菜单标题 -->
+<view class="h2" style="background-color:#fff;">
+  <image class="hot_line" style="z-index:1" src="../../images/icon/divide_l.png"></image>
+  <text class="title">热门菜式</text>
+  <image class="hot_line" style="z-index:1" src="../../images/icon/divide_r.png"></image>
+</view>
+
+<!-- 遍历数据获取的到菜式的信息 -->
+<view class="c-minheight wx-view_TQ4nqD" data-c_e_id="wx_view878d6007" style="background-color:#fff;margin-top:3rpx;">
+  <view class="list">
+    <block wx:for="{{posts_key}}" wx-for-item="item" wx:key="postId">
+      <view catchtap="menuTap" data-postid="{{item.postId}}">
+        <template is="menuListTemplate" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+</view>

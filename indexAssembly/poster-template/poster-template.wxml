@@ -1,0 +1,5 @@
+<template name="posterTemplate">
+  <view class="c-minheight wx-view_hTLJlH" data-c_e_id="wx_view_28f88e92" style="margin-top:15rpx;" style="background-color:#fff;">
+    <image class="wx-image_ncJNp9" style="border-radius:13rpx" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/%E8%83%A1%E6%A1%83%E9%87%8C.png" />
+  </view>
+</template>

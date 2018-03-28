@@ -1,0 +1,23 @@
+<view class="container">
+  <!-- 头像背景 -->
+  <view class="head-background">
+    <image class="userinfo-bgImg" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+
+  <!-- 用户信息 -->
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{name}}</text>
+    <text class="userProfile" id="userProfile">{{introduction}}</text>
+  </view>
+
+  <!-- 我的订单 -->
+  <view class="userItem" bindtap="detail">
+    <image class="userItemImg" src="../../images/icon/order.png"></image>
+    <text class="userItemText">我的订单</text>
+    <image class="userItemArrow" src="../../images/icon/right.png"></image>
+  </view>
+
+  <view class="interval" bindtap="collection">
+  </view>
+</view>

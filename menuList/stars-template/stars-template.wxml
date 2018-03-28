@@ -1,0 +1,12 @@
+<template name="starsTemplate">
+<view class="stars-container">
+    <view class="stars">
+        <image src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/star.png"></image>
+        <image src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/star.png"></image>
+        <image src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/star.png"></image>
+        <image src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/star.png"></image>
+        <image src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/star.png"></image>
+    </view>
+    <text class="stars-score">8.7</text>
+</view>
+</template>

@@ -1,0 +1,143 @@
+<import src="../../buyTemplate/pinglun/pinglun.wxml" />
+<view class="sec-detail">
+  <view class="sec-outer">
+    <view class="wx-view_KHAWVZ" data-c_e_id="wx_viewb7dbd52e">
+      <swiper autoplay="True" class="wx-swiper_Mn3JMs">
+        <swiper-item class="c-full wx-swiper-item_F6vCx8" data-c_e_id="wx_swiper_item015a5cd2">
+          <image bindtap="tap_d5808da3" class="wx-image_HsAX8s2" src="{{item.menuImg}}" />
+        </swiper-item>
+        <swiper-item class="c-full wx-swiper-item_qGeJVI" data-c_e_id="wx_swiper_item1d2f7146">
+          <image class="wx-image_HsAX8s2" src="{{item.menuImg}}" />
+        </swiper-item>
+      </swiper>
+      <view>
+        <text class="c-block wx-text_V55JEt" data-c_e_id="wx_textbf43d609">{{item.title}}</text>
+      </view>
+      <view class="label">
+        <image class="wx-image_DZaMGz" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/Buyicon/%E6%BB%A1.png" />
+        <image class="wx-image_DZaMGz" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/Buyicon/%E7%83%AD%20%281%29.png" />
+        <image class="wx-image_DZaMGz" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/Buyicon/%E9%99%90%20%281%29.png" />
+        <image class="moreTime" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/Buyicon/%E8%B6%85%E6%97%B6%E8%B5%94_icon.png" />
+      </view>
+      <view class="likelist" data-c_e_id="wx_view_4cc0358a">
+        <view class="nav_likelistmore">
+          <text class="c-block wx-text_t7lDiK" data-c_e_id="wx_textfcc12486">98人吃过</text>
+          <view class="xuxian"></view>
+          <text class="c-block wx-text_t7lDiK2" data-c_e_id="wx_texted258fa6">❯</text>
+        </view>
+        <view class="uselinklist" data-c_e_id="wx_view_ccf230eb">
+          <view class="nav_userlink" data-c_e_id="wx_navigator1586a87e" hover-class="navigator-hover">
+            <view class="likeuser" data-c_e_id="wx_view2a69167c">
+              <image class="useravatar" src="http://imgcdn.guoku.com/avatar/large/e1786c6ae7425a1dff35caf9612e2130" />
+            </view>
+          </view>
+        </view>
+        <template is="pinglunTemplate" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 抽屉内容 -->
+  <view class="bottom-check" wx:if="{{ showModalStatus }}">
+    <view class="check-top" bindtap="setModalStatus" data-status="0"></view>
+    <view animation="{{animationData}}" class="check-bottom">
+      <view wx:if="{{warning}}" class="warning">{{warnDes}}</view>
+      <view class="check-banner">
+        <view class="banner-left inline-block">
+          <image src="{{item.menuImg}}" class="check-image" />
+        </view>
+        <view class="banner-right inline-block">
+          <view bindtap="setModalStatus" data-status="0">
+            <image class="closeImg" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/%E5%8F%96%E6%B6%88%20%281%29.png"></image>
+          </view>
+          <view class="banner-price">
+            <view class="priceClass">
+              {{item.price}}元
+            </view>
+          </view>
+          <!--<view class="banner-storage">库存：{{item.storeTotal}}</view>-->
+          <view class="banner-checked">已选：{{haveCheckedProp}}</view>
+        </view>
+      </view>
+      <view class="check-center">
+        <!-- SKU---选取格式 -->
+        <view class="color check-sec" wx:for="{{item.property}}" wx:for-item="item">
+          <!-- 大类属性名 -->
+          <view class="inline-block-two">{{item.name}}</view>
+          <!-- 大类下属性名 -->
+          <view class="nature">
+
+            <!-- 属性名 -->
+            <view data-property="{{item.ano}}" data-value="{{per}}" data-index="{{index}}" class="inline-block choice-detail {{per == postData[item.ano]? 'active' : ''}}" wx:for="{{item.value}}" wx:for-item="per" wx:for-index="index" data-code="{{index}}" bindtap="getChecked">{{per}}</view>
+          </view>
+
+        </view>
+        <view class="color check-sec">
+          <view class="inline-block title">数量</view>
+          <view class="inline-block choice-slider">
+            <view class="minus" bindtap="minusNum">-</view>
+            {{number}}
+            <view class="add" bindtap="addNum">+</view>
+          </view>
+        </view>
+      </view>
+      <view bindtap="setModalStatus" data-status="0">
+        <button class="confirm" bindtap="goToCounter" bindtap="test_payment">确定</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部功能按钮 -->
+  <view class="footer">
+    <view class="footer-btn" style="display:flex;flex-direction: row;">
+      <view class="footer-btn1">
+        <view class="data" bindtap="showCartDetail">
+          <view class="icon">
+            <image class="footer-btn1_img" bindtap="showCartDetail" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/%E8%8F%9C%E7%AF%AE.png" />
+            <view class="count">
+              <text class="count_text">{{cart.count}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="text" bindtap="setModalStatus" data-status="1">
+        <view class="text_buy">
+          <text>加入菜篮子</text>
+        </view>
+      </view>
+      <view class="footer-btn4">
+        <image class="footer-btn1_img" src="http://xxy1978.oss-cn-shenzhen.aliyuncs.com/menu/icon/%E8%AF%84%E8%AE%BA%20%281%29.png" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 底部购物车功能 -->
+<!--<view class="noOne">
+  <view class="cart-detail" hidden="{{!showCartDetail||!cart.count}}">
+    <view class="mask" bindtap="hideCartDetail"></view>
+    <view class="list">
+      <view class="carttit">
+        <view class="carttit0">购物车</view>
+        <view class="cartempty">
+          <image src="../../images/icon/del.jpg" class="cartimg"></image>清空</view>
+      </view>
+      <view class="carttxt">
+        <view class="carttxt0">小象牙</view>
+        <view class="carttxt1">订单满100元送\可乐、鲜橙多</view>
+      </view>
+      <view class="item" wx:for="{{cart.list}}" wx:for-index="id" wx:for-item="num" wx:key="id">
+        <view class="name ellipsis">芬达可乐-330ml</view>
+        <view class="total">￥{{cart.list[id]}}</view>
+        <view class="reduce" data-id="{{id}}" bindtap="tapReduceCart">-</view>
+        <view class="num">{{cart.list[id]}}</view>
+        <view class="add" data-id="{{id}}" bindtap="tapAddCart">+</view>
+      </view>
+      <form bindsubmit="submit" report-submit="true">
+        <button class="buttomColor" formType="submit" disabled="{{!cart.count}}" bindtap="pay">
+          <text class="buttomColorText">结算</text>
+        </button>
+      </form>
+    </view>
+  </view>
+</view>-->

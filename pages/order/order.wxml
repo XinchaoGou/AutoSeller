@@ -1,0 +1,21 @@
+<!--订单列表-->
+<view class="orderlist" wx:for = "{{orders}}">
+
+  <view class="orderli">
+    <navigator url="../detail/detail">
+      <view class="orderlitop">
+        <view class="orderlileft">
+          <view class="orderlitit1">{{item.title}}</view>
+          <view class="orderlitit2">{{item.date}}</view>
+        </view>
+        <view class="orderliright">
+          {{item.amount}}
+        </view>
+        <view class="orderlibottom">
+          订单已完成 >
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+</view>
