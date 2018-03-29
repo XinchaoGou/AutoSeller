@@ -10,6 +10,7 @@ var app = getApp();
 Page({
   data: {
     indicatorDots: true,
+    
     autoplay: true,
     interval: 5000,
     duration: 1000,
